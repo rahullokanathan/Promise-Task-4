@@ -1,0 +1,15 @@
+body {
+    background-color: skyblue;
+    font-family: "Courier New", Courier, monospace;
+  }
+  h1 {
+    font-style: italic;
+    font-weight: bold;
+  }
+  table {
+    background-color: whitesmoke;
+  }
+  hr {
+    border-top: 0.3rem dotted black;
+    width: 10%;
+  }

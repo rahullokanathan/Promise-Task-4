@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holidays</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-3 mb-2">HOLIDAYS</h1>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control country mt-3 mb-3 col-6 mx-auto"
+          placeholder="Enter Country"
+        />
+        <input
+          type="number"
+          min="2005"
+          max="2049"
+          step="1"
+          value=""
+          placeholder="Select year"
+          class="form-control year mt-3 col-6 mx-auto"
+        />
+        <p class="error mx-auto col-6"></p>
+
+        <button
+          class="btn btn-dark btn-lg btn-block w-25 mx-auto"
+          onclick="displayHolidays()"
+        >
+          Enter
+        </button>
+      </div>
+      <hr />
+
+      <div class="scrolldown">
+        <table class="table table-hover d-none">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Date</th>
+              <th scope="col">Name</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody class="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
